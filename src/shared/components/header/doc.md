@@ -1,0 +1,5 @@
+- Chưa Reponsive
+- Chưa cày font
+- Chưa tối ưu thẻ
+- Tỉ lệ màu chưa đúng
+- Dùng Flex là chủ đạo cho tất cả hàng cột

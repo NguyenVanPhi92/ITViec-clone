@@ -1,0 +1,2 @@
+- Chưa cày font
+- Dùng Flex là chủ đạo cho tất cả hàng cột

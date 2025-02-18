@@ -1,0 +1,58 @@
+html {
+  line-height: 1.6;
+  font-family: 'Noto Sans JP', serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+img,
+ion-icon,
+button,
+a {
+  display: block;
+  color: inherit;
+}
+
+i {
+  font-size: 18px;
+}
+
+span {
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+// reset input
+// input {
+//   display: block;
+//   width: 100%;
+//   font: inherit;
+//   border: none;
+//   background: transparent;
+// }

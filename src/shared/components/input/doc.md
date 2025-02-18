@@ -1,0 +1,6 @@
+- Chưa Reponsive
+- Chưa cày font
+- Chưa tối ưu thẻ
+- Tỉ lệ màu chưa đúng
+- Chưa handle khi nhập sai thì viền input màu đỏ
+- Chưa validation xong
