@@ -1,5 +1,5 @@
 - Chưa Tạo Component Button
-- Đang làm UI page Home 80%
+- Đang làm UI page Home 90%
 - Đã TạoPage Login, Register 80%
 - Đã Tạo Component Input,Password Filed đc 80%
 - Đã Tạo Schema Validate Login
