@@ -24,10 +24,10 @@ export default function LoginPage() {
         <h2 className='text'>Login Page</h2>
         <form className='form-control w-80' onSubmit={handleSubmit(handleLogin)}>
           <div className='relative'>
-            <InputField control={control} label='Email' required name='phone' type='text' placeholder='nhập email' />
+            <InputField required control={control} label='Email' name='email' type='email' placeholder='nhập email' />
           </div>
           <div className='relative'>
-            <PasswordField label='Password' required control={control} name='password' placeholder='Mật Khẩu' />
+            <PasswordField required control={control} label='Password' name='password' placeholder='Mật Khẩu' />
           </div>
 
           <button type='submit' className={`btn-primary ${!isValid ? 'btn-disabled' : ''}`}>
