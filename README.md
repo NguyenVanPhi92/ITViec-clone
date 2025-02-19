@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project: ITViec-Clone
 
-## Getting Started
+## 📌 Overview
 
-First, run the development server:
+IT Viec là nền tảng tuyển dụng hàng đầu tại Việt Nam dành riêng cho ngành công nghệ thông tin (IT). Website kết nối các công ty với các lập trình viên, kỹ sư phần mềm, và chuyên gia IT thông qua hệ thống tuyển dụng chuyên biệt, giúp ứng viên tìm được công việc phù hợp với mức lương hấp dẫn. IT Viec nổi bật với giao diện thân thiện, bộ lọc thông minh và các bài viết hữu ích về thị trường IT. 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 👥 Team
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend Developers:** 1 members
+- **Backend Developers:** 1 members
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Chức Năng
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🚀 Dành cho Ứng Viên:
+✅ Tìm kiếm việc làm IT nhanh chóng – Bộ lọc thông minh theo ngôn ngữ lập trình, công nghệ, vị trí, kinh nghiệm, mức lương.
+✅ Hồ sơ cá nhân (CV Online) – Ứng viên có thể tạo và cập nhật hồ sơ để ứng tuyển nhanh.
+✅ Ứng tuyển trực tuyến – Chỉ với một cú click, ứng viên có thể gửi CV đến nhà tuyển dụng.
+✅ Đánh giá công ty – Cung cấp đánh giá chân thực từ nhân viên, giúp ứng viên lựa chọn nơi làm việc phù hợp.
+✅ Thông báo việc làm – Gửi thông báo khi có công việc mới phù hợp với yêu cầu của ứng viên.
 
-## Learn More
+🏢 Dành cho Nhà Tuyển Dụng:
+✅ Đăng tin tuyển dụng – Nhà tuyển dụng có thể tạo bài đăng dễ dàng để tiếp cận ứng viên tiềm năng.
+✅ Tìm kiếm hồ sơ ứng viên – Cơ sở dữ liệu ứng viên phong phú giúp nhà tuyển dụng tìm kiếm nhân tài phù hợp.
+✅ Quản lý ứng viên – Hệ thống hỗ trợ theo dõi ứng tuyển, sắp xếp phỏng vấn.
+✅ Xây dựng thương hiệu tuyển dụng – Tạo trang công ty chuyên nghiệp với thông tin, hình ảnh, văn hóa doanh nghiệp.
 
-To learn more about Next.js, take a look at the following resources:
+🔥 Khác:
+✅ Blog & Cộng đồng – Cung cấp bài viết về xu hướng công nghệ, kinh nghiệm phỏng vấn, chia sẻ từ chuyên gia IT.
+✅ Hỗ trợ khách hàng – Đội ngũ hỗ trợ tận tình cho cả ứng viên và nhà tuyển dụng.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💡 IT Viec giúp lập trình viên tìm được công việc tốt nhất và giúp doanh nghiệp tiếp cận nhân tài chất lượng trong lĩnh vực IT.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Impact
 
-## Deploy on Vercel
+- **10,000+ users** đang hoạt động.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** TailwindCSS, SCSS, TypeScript, React 19, Next 15, , App Router, Socket.IO
+- **State Management:** Zustand, RTK Query, TanStack Query
+- **APIs:** Axios
+- **Other:** React Hook Form, Resovle, Zod, React Icons, Google Analytics
+- **Backend:** Node.js, Python, PostgreSQL
+- **Cloud & Deployment:** AWS
+
+## 🔗 Links
+
+- **Demo:** [ITViec-Clone](https://it-viec-clone.vercel.app/)
+- **Repository:** [Private]
