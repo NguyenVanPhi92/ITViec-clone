@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import '../style/index.scss'
+import Header from '@/shared/components/header/header'
+import Footer from '@/shared/components/footer/footer'
 
 // const geistSans = Geist({
 //   variable: '--font-geist-sans',
@@ -23,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
