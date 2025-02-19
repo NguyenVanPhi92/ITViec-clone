@@ -11,9 +11,9 @@ import FooterSVG from '@/shared/assets/svgs/Footer-svg'
 
 export default function Footer() {
   return (
-    <footer className='px-10 py-5 relative flex flex-col gap-y-14 bg-gradient-to-r from-[#121212] to-[#53151C] text-white'>
-      <div className='footer-head flex justify-around items-center'>
-        <div className='logo flex flex-col gap-y-14'>
+    <footer className='py-10 px-[90px] relative flex flex-col gap-y-14 bg-gradient-to-r from-[#121212] to-[#53151C] text-white'>
+      <div className='footer-head grid grid-cols-12 gap-x-4 items-center'>
+        <div className='logo col-span-4 flex flex-col gap-y-14'>
           <div className='logo-head'>
             <Image alt='logo' src={logo} width={180} height={180} quality={90} />
             <p className='logo-title mt-2 text-lg'>Ít nhưng mà chất</p>
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='footer-content flex gap-x-6'>
+        <div className='footer-content col-span-8 grid grid-cols-4 gap-x-4'>
           <div className='col-1 flex flex-col gap-y-4'>
             <h4 className='font-bold text-xl'>About Us</h4>
             <Link href='/'>Home</Link>
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='footer-bottom pt-6 border-t flex justify-center items-center gap-x-4'>
+      <div className='footer-bottom pt-6 border-t border-[#aeabab65] flex justify-center items-center gap-x-4'>
         <p>Copyright © IT VIEC JSC</p> | <p>Tax code: 0312192258</p>
       </div>
 
