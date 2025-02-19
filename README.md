@@ -11,22 +11,22 @@ IT Viec là nền tảng tuyển dụng hàng đầu tại Việt Nam dành riê
 
 ## 🎯 Chức Năng
 
-🚀 Dành cho Ứng Viên:
-✅ Tìm kiếm việc làm IT nhanh chóng – Bộ lọc thông minh theo ngôn ngữ lập trình, công nghệ, vị trí, kinh nghiệm, mức lương.
-✅ Hồ sơ cá nhân (CV Online) – Ứng viên có thể tạo và cập nhật hồ sơ để ứng tuyển nhanh.
-✅ Ứng tuyển trực tuyến – Chỉ với một cú click, ứng viên có thể gửi CV đến nhà tuyển dụng.
-✅ Đánh giá công ty – Cung cấp đánh giá chân thực từ nhân viên, giúp ứng viên lựa chọn nơi làm việc phù hợp.
-✅ Thông báo việc làm – Gửi thông báo khi có công việc mới phù hợp với yêu cầu của ứng viên.
+🚀 Dành cho Ứng Viên: <br/>
+✅ Tìm kiếm việc làm IT nhanh chóng – Bộ lọc thông minh theo ngôn ngữ lập trình, công nghệ, vị trí, kinh nghiệm, mức lương. <br/>
+✅ Hồ sơ cá nhân (CV Online) – Ứng viên có thể tạo và cập nhật hồ sơ để ứng tuyển nhanh. <br/>
+✅ Ứng tuyển trực tuyến – Chỉ với một cú click, ứng viên có thể gửi CV đến nhà tuyển dụng. <br/>
+✅ Đánh giá công ty – Cung cấp đánh giá chân thực từ nhân viên, giúp ứng viên lựa chọn nơi làm việc phù hợp. <br/>
+✅ Thông báo việc làm – Gửi thông báo khi có công việc mới phù hợp với yêu cầu của ứng viên. <br/>
 
-🏢 Dành cho Nhà Tuyển Dụng:
-✅ Đăng tin tuyển dụng – Nhà tuyển dụng có thể tạo bài đăng dễ dàng để tiếp cận ứng viên tiềm năng.
-✅ Tìm kiếm hồ sơ ứng viên – Cơ sở dữ liệu ứng viên phong phú giúp nhà tuyển dụng tìm kiếm nhân tài phù hợp.
-✅ Quản lý ứng viên – Hệ thống hỗ trợ theo dõi ứng tuyển, sắp xếp phỏng vấn.
-✅ Xây dựng thương hiệu tuyển dụng – Tạo trang công ty chuyên nghiệp với thông tin, hình ảnh, văn hóa doanh nghiệp.
+🏢 Dành cho Nhà Tuyển Dụng: <br/>
+✅ Đăng tin tuyển dụng – Nhà tuyển dụng có thể tạo bài đăng dễ dàng để tiếp cận ứng viên tiềm năng. <br/>
+✅ Tìm kiếm hồ sơ ứng viên – Cơ sở dữ liệu ứng viên phong phú giúp nhà tuyển dụng tìm kiếm nhân tài phù hợp. <br/>
+✅ Quản lý ứng viên – Hệ thống hỗ trợ theo dõi ứng tuyển, sắp xếp phỏng vấn. <br/>
+✅ Xây dựng thương hiệu tuyển dụng – Tạo trang công ty chuyên nghiệp với thông tin, hình ảnh, văn hóa doanh nghiệp. <br/>
 
-🔥 Khác:
-✅ Blog & Cộng đồng – Cung cấp bài viết về xu hướng công nghệ, kinh nghiệm phỏng vấn, chia sẻ từ chuyên gia IT.
-✅ Hỗ trợ khách hàng – Đội ngũ hỗ trợ tận tình cho cả ứng viên và nhà tuyển dụng.
+🔥 Khác: <br/>
+✅ Blog & Cộng đồng – Cung cấp bài viết về xu hướng công nghệ, kinh nghiệm phỏng vấn, chia sẻ từ chuyên gia IT. <br/>
+✅ Hỗ trợ khách hàng – Đội ngũ hỗ trợ tận tình cho cả ứng viên và nhà tuyển dụng. <br/>
 
 💡 IT Viec giúp lập trình viên tìm được công việc tốt nhất và giúp doanh nghiệp tiếp cận nhân tài chất lượng trong lĩnh vực IT.
 
