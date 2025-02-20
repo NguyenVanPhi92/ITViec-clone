@@ -65,7 +65,7 @@ export default function Home() {
         <FaRegArrowAltCircleRight className='text-red-500' />
       </div>
 
-      {/* Section 1 */}
+      {/* Section 1 Porfile */}
       <main className='my-10 mx-[90px]'>
         <h2 className='text-center font-bold text-2xl'>Công cụ tốt nhất cho hành trang ứng tuyển của bạn</h2>
 
@@ -296,7 +296,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Section 2 */}
+      {/* Section 2 Company */}
       <main className='my-10 mx-[90px]'>
         <h2 className='text-center font-bold text-2xl'>Nhà tuyển dụng hàng đầu</h2>
 
@@ -584,47 +584,50 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Section 3 */}
+      {/* Section 3 JOBS */}
       <main className='my-10 mx-[90px]'>
         <h2 className='text-center font-bold text-2xl'>111 Việc làm IT cho Developer "Chất"</h2>
         <div className='card-list grid grid-cols-4 gap-3'>
           {Array.from({ length: 8 }, (_, i) => (
-            <div
-              key={i}
-              className={`card relative border ${i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''} p-4 rounded-xl`}
-            >
-              <div className='card-head '>
-                <span>Đăng {i} giờ trước</span>
-              </div>
-              {i < 3 && <span className='absolute w-14 h-7 bg-blue-500 right-0 top-0 text-center text-white'>New</span>}
-              <div className='card-body'>
-                <h3 className='font-bold text-xl'>Senior Front End Developer (ReactJS, Redux, SASS/SCSS)</h3>
-                <div className='company flex items-center gap-x-4'>
-                  <Image src={company} alt='company' width={70} height={70} quality={90} />
-                  <p>Byteuptech</p>
+            <Link href='/job' key={i} legacyBehavior>
+              <a className={`card block relative border ${i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''} p-4 rounded-xl`}>
+                <div className='card-head'>
+                  <span>Đăng {i} giờ trước</span>
                 </div>
-                <p className='flex items-center gap-x-4'>
-                  <BiDollarCircle /> <Link href='/'>Đăng nhập để xem mức lương</Link>
-                </p>
-              </div>
-              <div className='card-bottom'>
-                <div className='flex items-center gap-x-4'>
-                  <PiBuildingOfficeLight />
-                  <p>Tai Van Phong</p>
+                {i < 3 && (
+                  <span className='absolute w-14 h-7 bg-blue-500 right-0 top-0 text-center text-white'>New</span>
+                )}
+                <div className='card-body'>
+                  <h3 className='font-bold text-xl'>Senior Front End Developer (ReactJS, Redux, SASS/SCSS)</h3>
+                  <div className='company flex items-center gap-x-4'>
+                    <Image src={company} alt='company' width={70} height={70} quality={90} />
+                    <p>Byteuptech</p>
+                  </div>
+                  <p className='flex items-center gap-x-4'>
+                    <BiDollarCircle />{' '}
+                    <Link href='/' legacyBehavior>
+                      <a>Đăng nhập để xem mức lương</a>
+                    </Link>
+                  </p>
                 </div>
-                <div className='flex items-center gap-x-4'>
-                  <FiMapPin />
-                  <p>TP Ho Chi Minh</p>
+                <div className='card-bottom'>
+                  <div className='flex items-center gap-x-4'>
+                    <PiBuildingOfficeLight />
+                    <p>Tai Van Phong</p>
+                  </div>
+                  <div className='flex items-center gap-x-4'>
+                    <FiMapPin />
+                    <p>TP Ho Chi Minh</p>
+                  </div>
+                  <div className='tech grid grid-cols-4 items-center gap-x-2'>
+                    <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Reactjs</p>
+                    <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>HTML5</p>
+                    <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Javascript</p>
+                    <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Typescript</p>
+                  </div>
                 </div>
-
-                <div className='tech grid grid-cols-4 items-center gap-x-2'>
-                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Reactjs</p>
-                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>HTML5</p>
-                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Javascript</p>
-                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Typescript</p>
-                </div>
-              </div>
-            </div>
+              </a>
+            </Link>
           ))}
         </div>
       </main>

@@ -6,6 +6,7 @@ import { PiBuildingOfficeLight } from 'react-icons/pi'
 import { FiMapPin } from 'react-icons/fi'
 import { LuDot } from 'react-icons/lu'
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6'
+import { FaFlagUsa } from 'react-icons/fa'
 
 export default function Job() {
   return (
@@ -76,50 +77,58 @@ export default function Job() {
         </div>
       </section>
 
-      {/* main jobs */}
-      <main className='grid grid-cols-10 gap-x-4'>
-        <section className='list-job col-span-4 h-max border border-red-200 rounded-xl p-4 bg-white shadow-md'>
-          <div className='job'>
-            <p className='job-time'>Đăng 1 ngày trước</p>
-            <div className='job-head'>
-              <h4>Middle Full Stack Developer (NodeJS, Angular, ReactJS)</h4>
-              <div className='company flex items-center gap-x-4'>
-                <Image src={company} alt='' width={60} height={60} quality={80} />
-                <p>AlphaSphere</p>
+      {/* Main Jobs */}
+      <main className='grid grid-cols-10 gap-x-8'>
+        {/* List job */}
+        <section className='list-job col-span-4'>
+          {Array.from({ length: 8 }, (_, i) => (
+            <div
+              className='job relative h-max border border-l-4 border-l-red-400 mb-4 border-red-200 rounded-xl p-4 bg-white shadow-md'
+              key={i}
+            >
+              <p className='job-time'>Đăng 1 ngày trước</p>
+              <div className='job-head'>
+                <h4>Middle Full Stack Developer (NodeJS, Angular, ReactJS)</h4>
+                <div className='company flex items-center gap-x-4'>
+                  <Image src={company} alt='' width={60} height={60} quality={80} />
+                  <p>AlphaSphere</p>
+                </div>
+                <div className='salary'>
+                  <p className='flex items-center gap-x-4'>
+                    <BiDollarCircle /> <Link href='/'>Đăng nhập để xem mức lương</Link>
+                  </p>
+                </div>
               </div>
-              <div className='salary'>
-                <p className='flex items-center gap-x-4'>
-                  <BiDollarCircle /> <Link href='/'>Đăng nhập để xem mức lương</Link>
+              <div className='job-body'>
+                <div className='flex items-center gap-x-4'>
+                  <PiBuildingOfficeLight />
+                  <p>Tai Van Phong</p>
+                </div>
+                <div className='flex items-center gap-x-4'>
+                  <FiMapPin />
+                  <p>TP Ho Chi Minh</p>
+                </div>
+
+                <div className='tech flex items-center gap-x-2'>
+                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Reactjs</p>
+                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>HTML5</p>
+                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Javascript</p>
+                  <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Typescript</p>
+                </div>
+              </div>
+              <div className='job-bottom'>
+                <p className='flex items-center'>
+                  <LuDot className='text-red-600 text-[30px]' />
+                  <span>Career growth and development opportunities</span>
                 </p>
               </div>
-            </div>
-            <div className='job-body'>
-              <div className='flex items-center gap-x-4'>
-                <PiBuildingOfficeLight />
-                <p>Tai Van Phong</p>
-              </div>
-              <div className='flex items-center gap-x-4'>
-                <FiMapPin />
-                <p>TP Ho Chi Minh</p>
-              </div>
 
-              <div className='tech grid grid-cols-4 items-center gap-x-2'>
-                <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Reactjs</p>
-                <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>HTML5</p>
-                <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Javascript</p>
-                <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Typescript</p>
-              </div>
+              <span className='absolute -right-[7px] top-1/2 w-2 h-4 bg-red-500 clip-triangle'></span>
             </div>
-            <div className='job-bottom'>
-              <p className='flex items-center'>
-                <LuDot className='text-red-600 text-[30px]' />
-                <span>Career growth and development opportunities</span>
-              </p>
-            </div>
-          </div>
+          ))}
         </section>
-
-        <section className='col-span-6 border border-red-200 rounded-xl p-4 bg-white shadow-md'>
+        {/* Job Detail */}
+        <section className='col-span-6 h-max rounded-xl p-4 bg-white shadow-md'>
           <div className='head'>
             <div className='flex justify-between'>
               <div className='flex gap-x-4 items-center'>
@@ -260,21 +269,140 @@ export default function Job() {
                 </span>
               </p>
             </div>
-            <div className='require py-4 border-b-[1px] border-gray-300'></div>
-            <div className='why py-4 border-b-[1px] border-gray-300'></div>
-            <div className='address py-4 border-b-[1px] border-gray-300'></div>
+            <div className='require py-4 border-b-[1px] border-gray-300'>
+              <h4 className='font-bold text-xl'>Yêu cầu công việc</h4>
+              <p>
+                1. Possessed a Bachelor’s Degree / Diploma / Professional Certificate in Information Technology,
+                Computer Science, Software Engineering or any IT related field{' '}
+              </p>
+              <p>2. From 7 years - 12 years+ of proven working experience as a Front-end Developer</p>
+              <p>3. Ability to perform well in a fast-paced environment.</p>
+              <p>4. Familiarity with browser testing and debugging.</p>
+              <p>5. Excellent analytical and multitasking skills</p>
+              <p>
+                6. In-depth understanding of the entire web development process (design, development, and deployment)
+              </p>
+              <p>7. Provide suggestion/solutions on client’s change request.</p>
+              <p>
+                8. Flexibility to quickly adjust task priorities for unforeseen changes while following task deadlines.
+              </p>
+              <p>
+                9. Possessed a Bachelor’s Degree / Diploma / Professional Certificate in Information Technology,
+                Computer Science, Software Engineering or any IT related field
+              </p>
+              <p>
+                10. Hands on experience with frontend technology reactjs, redux, sass/scss, ES5/6, nodejs (nice-to-have)
+              </p>
+              <p>11. Experience in solving problems like caching, pagination and etc.</p>
+              <p>12. Knowledgeable on web services and able to integrate API into website.</p>
+              <p>13. Knowledgeable on mobile responsive approach</p>
+              <p>14. Familiar with Git Repository</p>
+              <p>15. Required language(s): Good English communication skills</p>
+            </div>
+            <div className='why py-4 border-b-[1px] border-gray-300'>
+              <h4 className='font-bold text-xl'>Added Advantage: </h4>
+              <p>1. Fast learner</p>
+              <p>2. Experience in leading / guiding junior(s) </p>
+              <p>3. Ability to convert normal HTML to separate components using frontend frameworks. </p>
+              <p>4. Experience on identifying and solving performance issue on the website. </p>
+              <p>5. Understand metrics score such as First Contentful Paint, Time to Interactive etc. </p>
+              <p>
+                6. In-depth understanding of the entire web development process design, development,Self-motivated to
+                complete target/goals, and plan several phases of the target/goal and take action to achieve it
+              </p>
+              <p>7. Willing to share knowledge with others. </p>
+              <p>8. Willing to learn knowledge and skills out of frontend developer jobscope</p>
+              <p>9. Knowledge on SEO</p>
+              <p>10. Understanding of layout aesthetics</p>
+            </div>
+            <div className='address py-4 border-b-[1px] border-gray-300'>
+              <h4 className='font-bold text-xl'>Tại sao bạn sẽ yêu thích làm việc tại đây</h4>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>English Working Environment</span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Performance Evaluation twice/year </span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Long-term Career Path </span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Team Sharing & Leadership Training Benefit </span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Premium insurance, Health Check, Fitness & Vision Claim Care</span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Team Building, Quarterly Eating, Bonding </span>
+              </p>
+              <p className='flex items-center'>
+                <LuDot className='text-red-600 text-[30px]' />
+                <span>Birthday Lucky Money & Celebration</span>
+              </p>
+            </div>
+            <div className='address py-4 '>
+              <h4 className='font-bold text-xl'>Byteuptech</h4>
+              <p>Byteup Technology</p>
+              <div className='info-company grid grid-cols-3 gap-x-4 mt-4'>
+                <div className='col'>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Mô hình công ty</p>
+                    <p>Dịch vụ và Tư vấn giải pháp</p>
+                  </div>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Quốc gia</p>
+                    <p className='flex items-center gap-x-2'>
+                      <FaFlagUsa />
+                      <span>Malaysia</span>
+                    </p>
+                  </div>
+                </div>
+                <div className='col'>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Mô hình công ty</p>
+                    <p>Dịch vụ và Tư vấn giải pháp</p>
+                  </div>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Quốc gia</p>
+                    <p className='flex items-center gap-x-2'>
+                      <FaFlagUsa />
+                      <span>Malaysia</span>
+                    </p>
+                  </div>
+                </div>
+                <div className='col'>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Mô hình công ty</p>
+                    <p>Dịch vụ và Tư vấn giải pháp</p>
+                  </div>
+                  <div className='item'>
+                    <p className='text-sm text-gray-500'>Quốc gia</p>
+                    <p className='flex items-center gap-x-2'>
+                      <FaFlagUsa />
+                      <span>Malaysia</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
-      {/* pagination */}
+      {/* Pagination */}
       <div className='pagination w-max mx-auto'>
         <nav aria-label='Page navigation example'>
           <ul className='inline-flex -space-x-px text-sm'>
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-700 dark:text-gray-400 '
               >
                 Previous
               </a>
@@ -282,7 +410,7 @@ export default function Job() {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300  hover:bg-gray-700 dark:text-gray-400 '
               >
                 1
               </a>
@@ -290,7 +418,7 @@ export default function Job() {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-700    dark:text-gray-400 '
               >
                 2
               </a>
@@ -299,7 +427,7 @@ export default function Job() {
               <a
                 href='#'
                 aria-current='page'
-                className='flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white'
+                className='flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700  dark:bg-gray-700 dark:text-white'
               >
                 3
               </a>
@@ -307,7 +435,7 @@ export default function Job() {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-700    dark:text-gray-400 '
               >
                 4
               </a>
@@ -315,7 +443,7 @@ export default function Job() {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-700    dark:text-gray-400 '
               >
                 5
               </a>
@@ -323,7 +451,7 @@ export default function Job() {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
+                className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-700    dark:text-gray-400 '
               >
                 Next
               </a>
