@@ -14,7 +14,7 @@ import { Fragment } from 'react'
 export default function Home() {
   return (
     <>
-      {/* // Search Filter */}
+      {/* Search Filter */}
       <div className='px-40 py-14 flex flex-col gap-y-8 border-t-[1px] border-t-[#ffebeb24] bg-gradient-to-r from-[#121212] to-[#53151C] text-white'>
         <h2 className='title font-bold text-2xl'>1,095 Việc làm IT cho Developer "Chất"</h2>
 
@@ -53,7 +53,6 @@ export default function Home() {
       </div>
 
       {/* Title */}
-
       <div className='flex justify-center items-center gap-x-4 bg-[#F7F7F7] py-4 border-b-[1px] border-b-[#e5e5e5]'>
         <Image alt='hot' src={hot} width={50} height={50} quality={80} />
 
@@ -303,7 +302,7 @@ export default function Home() {
         <div className='card-list grid grid-cols-3 gap-3 justify-center '>
           {Array.from({ length: 6 }, (_, i) => (
             <Link href='/company' key={i} legacyBehavior>
-              <div className='card relative flex flex-col gap-y-4 justify-between items-center border border-gray-300 rounded-xl'>
+              <div className='card cursor-pointer relative flex flex-col gap-y-4 justify-between items-center border border-gray-300 rounded-xl'>
                 <div className='card-top p-8 flex flex-col items-center gap-y-4'>
                   <div className='card-top__img border border-gray-300 rounded-2xl shadow-2xl bg-white w-max px-10 mx-auto'>
                     <Image alt='logo' src={fpt} width={100} height={100} quality={80} />
@@ -590,7 +589,11 @@ export default function Home() {
         <div className='card-list grid grid-cols-4 gap-3'>
           {Array.from({ length: 8 }, (_, i) => (
             <Link href='/job' key={i} legacyBehavior>
-              <div className={`card relative border ${i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''} p-4 rounded-xl`}>
+              <div
+                className={`card relative cursor-pointer border ${
+                  i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''
+                } p-4 rounded-xl`}
+              >
                 <div className='card-head'>
                   <span>Đăng {i} giờ trước</span>
                 </div>

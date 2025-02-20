@@ -1,10 +1,13 @@
 - Chưa Tạo Component Button
 
-- Đã làm UI page Jobs 90%
-- Đã làm UI page Home 90%
-- Đã Làm UI page Login, Register 80%
-- Đã Làm UI page Register 40%
-- Đã Làm UI page Company 0%
+- Đã lên Được khung sườn của các page
+
+1. Đã làm UI page Jobs 90%
+2. Đã làm UI page Home 90%
+3. Đã Làm UI page Login 80%
+4. Đã Làm UI page Register 40%
+5. Đã Làm UI page Company 50%
+6. Đã Làm UI page Profile 0%
 
 - Đã Tạo Component Input,Password Filed đc 80%
 - Đã Tạo Schema Validate Login
