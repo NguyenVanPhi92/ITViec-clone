@@ -302,7 +302,7 @@ export default function Home() {
 
         <div className='card-list grid grid-cols-3 gap-3 justify-center '>
           {Array.from({ length: 6 }, (_, i) => (
-            <Fragment key={i}>
+            <Link href='/company' key={i} legacyBehavior>
               <div className='card relative flex flex-col gap-y-4 justify-between items-center border border-gray-300 rounded-xl'>
                 <div className='card-top p-8 flex flex-col items-center gap-y-4'>
                   <div className='card-top__img border border-gray-300 rounded-2xl shadow-2xl bg-white w-max px-10 mx-auto'>
@@ -579,7 +579,7 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-            </Fragment>
+            </Link>
           ))}
         </div>
       </main>
@@ -590,7 +590,7 @@ export default function Home() {
         <div className='card-list grid grid-cols-4 gap-3'>
           {Array.from({ length: 8 }, (_, i) => (
             <Link href='/job' key={i} legacyBehavior>
-              <a className={`card block relative border ${i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''} p-4 rounded-xl`}>
+              <div className={`card relative border ${i < 3 ? 'border-red-200 bg-[#FFF4E9]' : ''} p-4 rounded-xl`}>
                 <div className='card-head'>
                   <span>Đăng {i} giờ trước</span>
                 </div>
@@ -626,7 +626,7 @@ export default function Home() {
                     <p className='bg-slate-50 border rounded-full w-max p-2 text-sm'>Typescript</p>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           ))}
         </div>
