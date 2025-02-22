@@ -21,22 +21,27 @@ export default function LoginPage() {
   return (
     <div className='flex gap-x-6 my-20 justify-center'>
       <div className='form'>
-        <h2 className='text'>Login Page</h2>
-        <form className='form-control w-80' onSubmit={handleSubmit(handleLogin)}>
+        <h2 className='text'>Chào mừng bạn đến với ITViec!</h2>
+        <form className='form-control w-96' noValidate onSubmit={handleSubmit(handleLogin)}>
           <div className='relative'>
-            <InputField required control={control} label='Email' name='email' type='email' placeholder='nhập email' />
+            <InputField required control={control} label='Email' name='email' type='text' placeholder='nhập email' />
           </div>
+
           <div className='relative'>
             <PasswordField required control={control} label='Password' name='password' placeholder='Mật Khẩu' />
           </div>
 
-          <button type='submit' className={`btn-primary ${!isValid ? 'btn-disabled' : ''}`}>
-            Đăng nhập
-          </button>
-
-          <div className='form-item-forgot-pw'>
-            <Link href='/register'>Đăng Ký</Link>
-            <Link href='/reset_password'>Quên mật khẩu</Link>
+          <button className='w-full bg-red-600 py-1 rounded-lg text-white '>Đăng Nhập</button>
+          <div className='flex justify-between items-center'>
+            <p className='flex gap-x-4'>
+              <span>Bạn chưa có tài khoản?</span>
+              <Link href='/register' className='text-blue-600 hover:underline'>
+                Đăng Ký
+              </Link>
+            </p>
+            <Link href='/forget' className='text-blue-600 hover:underline'>
+              Quên mật khẩu?
+            </Link>
           </div>
         </form>
       </div>

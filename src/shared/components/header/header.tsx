@@ -5,7 +5,7 @@ import avatar from '../../assets/images/avatar.jpg'
 import Link from 'next/link'
 
 export default function Header() {
-  const auth = true
+  const auth = false
   return (
     <header className='px-10 py-5 flex justify-between items-center bg-gradient-to-r from-[#121212] to-[#53151C] text-white'>
       <div className='nav-left flex items-center gap-x-8'>
