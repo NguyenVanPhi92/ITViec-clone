@@ -25,3 +25,5 @@
 
 Khoảng cách thẻ main thẻ cha py-10 px-[90px] bg-[#F7F7F7]
 padding thẻ con p-4
+
+_Khởi tạo RTK Query Zustand_
