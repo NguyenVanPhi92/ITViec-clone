@@ -11,7 +11,7 @@ import { FaFlagUsa } from 'react-icons/fa'
 export default function Job() {
   return (
     <div className='py-10 px-[90px] bg-[#F7F7F7]'>
-      <h2 className='text-2xl font-bold'>118 việc làm reactjs tại Việt Nam</h2>
+      <h2 className='text-2xl font-bold'>118 việc làm Reactjs tại Việt Nam</h2>
 
       <section className='filter p-4 bg-white flex justify-between gap-x-4'>
         <div className='filter-left flex gap-x-4'>
